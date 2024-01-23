@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz sur ma personnalité</title>
+  <style>
+    body {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: #3a3a3a;
+    }
+
+    h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  color: #f5ce20;
+ 
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    button {
+      color: white;
+  text-decoration: none;
+  background-color: #f5ce20;
+  font-size: 1.1em;
+  font-weight: 600;
+  padding: 0.9375em 2.1875em;
+  margin-bottom: 40px;
+  display: inline-block;
+  border-radius: 15px;
+    }
+
+    .results {
+      margin-top: 20px;
+    }
+
+    .results ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .quiz-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f9f9f9;
+}
+  </style>
+</head>
+<body>
+
+  <h1>Quiz sur ma personnalité</h1>
+
+  <form id="quizForm">
+    <!-- Question 1 -->
+    <div class="quiz-box">
+    <label>
+      <strong>1.Vous êtes plus susceptible de </strong><br>
+      <input type="radio" name="q1" value="préférer passer du temps seul ">préférer passer du temps seul<br>
+      <input type="radio" name="q1" value="préférer passer du temps avec des amis et de la famille"> préférer passer du temps avec des amis et de la famille<br>
+      <input type="radio" name="q1" value="préférer passer du temps avec des personnes que vous connaissez bien"> préférer passer du temps avec des personnes que vous connaissez bien<br>    </label>
+  </div>
+      <!-- Question 2 -->
+      <div class="quiz-box">
+    <label>
+      <strong>2.Vous êtes plus à l'aise</strong><br>
+      <input type="radio" name="q2" value="en public"> en public<br>
+      <input type="radio" name="q2" value="dans l'intimité"> dans l'intimité<br>
+      <input type="radio" name="q2" value="dans un environnement mixte"> dans un environnement mixte<br>
+    </label>
+    </div>
+    <!-- Question 3 -->
+    <div class="quiz-box">
+    <label>
+        <strong>3.Vous êtes plus intéressé par</strong><br>
+        <input type="radio" name="q3" value="les gens"> les gens<br>
+        <input type="radio" name="q3" value="les idées"> les idées<br>
+        <input type="radio" name="q3" value="les choses"> les choses<br>
+      </label>
+      </div>
+      <!-- Question 4 -->
+      <div class="quiz-box">
+      <label>
+        <strong>4.Vous êtes plus susceptible de</strong><br>
+        <input type="radio" name="q4" value="être organisé et méticuleux"> être organisé et méticuleux<br>
+        <input type="radio" name="q4" value="être flexible et adaptable">être flexible et adaptable<br>
+        <input type="radio" name="q4" value="être un mélange des deux"> être un mélange des deux<br>
+      </label>
+      </div>
+      <!-- Question 5 -->
+      <div class="quiz-box">
+      <label>
+        <strong>5.Vous êtes plus sensible à </strong><br>
+        <input type="radio" name="q5" value="les émotions des autres"> les émotions des autres<br>
+        <input type="radio" name="q5" value="votre propre logique">votre propre logique<br>
+        <input type="radio" name="q5" value="les deux"> les deux<br>
+      </label>
+      </div>
+      <!-- Question 6 -->
+      <div class="quiz-box">
+      <label>
+        <strong>6.Vous êtes plus susceptible de </strong><br>
+        <input type="radio" name="q6" value="être ouvert aux nouvelles expériences"> être ouvert aux nouvelles expériences<br>
+        <input type="radio" name="q6" value="être réaliste et prudent">être réaliste et prudent<br>
+        <input type="radio" name="q6" value="être un mélange des deux">être un mélange des deux<br>
+      </label>
+      </div>
+<!-- Question 7 -->
+<div class="quiz-box">
+<label>
+    <strong>7.Vous êtes plus susceptible de </strong><br>
+    <input type="radio" name="q7" value="être optimiste et enthousiaste"> être optimiste et enthousiaste<br>
+    <input type="radio" name="q7" value="préférer les choses familières">préférer les choses familières<br>
+    <input type="radio" name="q7" value="être un mélange des deux">être un mélange des deux<br>
+  </label>
+  </div>
+<!-- Question 8 -->
+<div class="quiz-box">
+<label>
+    <strong>8.Quelle est votre couleur préférée ? </strong><br>
+    <input type="radio" name="q8" value="Le bleu"> Le bleu<br>
+    <input type="radio" name="q8" value="le rouge"> Le rouge<br>
+    <input type="radio" name="q8" value="Le vert">Le vert<br>
+  </label>
+  </div>
+  <!-- Question 9 -->
+  <div class="quiz-box">
+<label>
+    <strong>9.Quelle est votre passion ? </strong><br>
+    <input type="radio" name="q9" value="Le sport"> Le sport<br>
+    <input type="radio" name="q9" value="La musique"> La musique<br>
+    <input type="radio" name="q9" value="La cuisine">La cuisine<br>
+  
+</label>
+</div>
+
+<!-- Question 10 -->
+<div class="quiz-box">
+<label>
+    <strong>10.Quel est votre animal préféré ?</strong><br>
+    <input type="radio" name="q10" value="Le chien"> Le chien<br>
+    <input type="radio" name="q10" value="Le chat"> Le chat<br>
+    <input type="radio" name="q10" value="aucun">aucun <br>
+  
+</label>
+</div>
+<!-- Question 11 -->
+<div class="quiz-box">
+<label>
+    <strong>11.Quel est votre film préféré ?</strong><br>
+    <input type="radio" name="q11" value="Un film d'action">Un film d'action<br>
+    <input type="radio" name="q11" value="Un film d'animation"> Un film d'animation<br>
+    <input type="radio" name="q11" value="Un film comedie"> Un film comedie<br>
+  </label>
+  </div>
+    <button type="button" onclick="calculateScore()">Valider</button>
+  </form>
+
+  <div class="results" id="resultsSection" style="display: none;">
+    <h2>Votre Note :</h2>
+    <p id="score"></p>
+    <h2>Réponses Correctes :</h2>
+    <ul id="correctAnswers"></ul>
+  </div>
+
+  <script>
+    function calculateScore() {
+      // Initialiser le score et les réponses correctes
+      let score = 0;
+      let correctAnswers = [];
+
+      // Question 1
+      const q1Answer = document.querySelector('input[name="q1"]:checked');
+      if (q1Answer && q1Answer.value === "préférer passer du temps avec des amis et de la famille") {
+        score++;
+        correctAnswers.push("Question 1 :préférer passer du temps avec des amis et de la famille");
+      }
+      // Question 2
+      const q2Answer = document.querySelector('input[name="q2"]:checked');
+      if (q2Answer && q2Answer.value === "dans l'intimité") {
+        score++;
+        correctAnswers.push("Question 2 :dans l'intimité");
+      }
+      // Question 3
+      const q3Answer = document.querySelector('input[name="q3"]:checked');
+      if (q3Answer && q3Answer.value === "les idées") {
+        score++;
+        correctAnswers.push("Question 3 :les idées");
+      }
+       // Question 4
+       const q4Answer = document.querySelector('input[name="q4"]:checked');
+      if (q4Answer && q4Answer.value === "être flexible et adaptable") {
+        score++;
+        correctAnswers.push("Question 4 :être flexible et adaptable");
+      }
+      // Question 5
+      const q5Answer = document.querySelector('input[name="q5"]:checked');
+      if (q5Answer && q5Answer.value === "être flexible et adaptable") {
+        score++;
+        correctAnswers.push("Question 5 :être flexible et adaptable");
+      }
+      // Question 6
+      const q6Answer = document.querySelector('input[name="q6"]:checked');
+      if (q6Answer && q6Answer.value === "être ouvert aux nouvelles expériences") {
+        score++;
+        correctAnswers.push("Question 6:être ouvert aux nouvelles expériences");
+      }
+      // Question 7
+      const q7Answer = document.querySelector('input[name="q7"]:checked');
+      if (q7Answer && q7Answer.value === "préférer les choses familières") {
+        score++;
+        correctAnswers.push("Question 7:préférer les choses familières");
+      }
+      // Question 8
+      const q8Answer = document.querySelector('input[name="q8"]:checked');
+      if (q8Answer && q8Answer.value === "Le bleu") {
+        score++;
+        correctAnswers.push("Question 8:Le bleu");
+      }
+      // Question 9
+      const q9Answer = document.querySelector('input[name="q9"]:checked');
+      if (q9Answer && q9Answer.value === "La cuisine") {
+        score++;
+        correctAnswers.push("Question 9:La cuisine");
+      }
+      // Question 10
+      const q10Answer = document.querySelector('input[name="q10"]:checked');
+      if (q10Answer && q10Answer.value === "aucun") {
+        score++;
+        correctAnswers.push("Question 10:aucun");
+      }
+      // Question 11
+      const q11Answer = document.querySelector('input[name="q11"]:checked');
+      if (q11Answer && q11Answer.value === "Un film comedie") {
+        score++;
+        correctAnswers.push("Question 11:Un film comedie");
+      }
+
+      
+
+      // Affichez les résultats
+      document.getElementById('score').innerText = 'Votre note : ' + score + ' / 11';
+      document.getElementById('correctAnswers').innerHTML = correctAnswers.map(answer => '<li>' + answer + '</li>').join('');
+
+      // Affichez la section des résultats
+      document.getElementById('resultsSection').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>

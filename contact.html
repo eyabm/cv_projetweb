@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eya Ben Maallem</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">
+        <img src="images/eya.jpg" alt="eya">Eya</a>
+      <nav class="navigation">
+        <a href="#services">Home Page</a>
+        <a href="education.html" target="_blank">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="computer.html">Computer skills</a>
+        <a href="experience.html">Experiences</a>
+        <a href="QUIZ.html">QUIZ</a>
+        <a href="contact.html">contact</a>
+      </nav>
+    </header>
+  <style>
+   
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+    }
+
+    button {
+        color: white;
+  text-decoration: none;
+  background-color: #f5ce20;
+  font-size: 1.1em;
+  font-weight: 600;
+  padding: 0.9375em 2.1875em;
+  margin-bottom: 40px;
+  display: inline-block;
+  border-radius: 15px;
+ 
+  
+    }
+  </style>
+</head>
+<body>
+    <section class="projects" id="projects">
+        <h2 class="title">contact</h2>
+        <div class="parent-cards">
+          <div class="card-1">
+            <form id="contactForm">
+                <label>
+                  Nom :
+                  <input type="text" name="name" required>
+                </label>
+                <label>
+                    E-mail :
+                    <input type="email" name="email" required>
+                  </label>
+                  <label>
+                    Message :
+                    <textarea name="message" rows="4" required></textarea>
+                  </label>
+            
+          </div></div>
+    <button type="button" onclick="submitForm()">Envoyer</button>   
+      </section>
+  </form>
+
+  <script>
+    function submitForm() {
+      // Récupérer les données du formulaire
+      const name = document.getElementById('contactForm').elements['name'].value;
+      const email = document.getElementById('contactForm').elements['email'].value;
+      const message = document.getElementById('contactForm').elements['message'].value;
+
+      
+
+      // Affichez un message de confirmation (ceci est juste un exemple)
+      alert('Votre message a été envoyé avec succès!');
+    }
+  </script>
+<footer>
+  <p>Copyrights &copy; <a href="#">eya ben maallem</a> </p>
+  <div class="social">
+    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+  </div>
+</footer>
+</body>
+</html>
